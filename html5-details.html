@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | HTML5 Deep Dive</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="tech-icon-large">📄</div>
+        <h1>HTML5 Mastery</h1>
+        <p>Semantic landmarks and structural meaning. The right element for the right job.</p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="tech-overview">
+      <div class="container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <h2>What is HTML5?</h2>
+            <p>HTML5 is the latest evolution of the standard that defines HTML. It introduces powerful features for building modern web applications including semantic elements, multimedia support, and graphics capabilities.</p>
+            <div class="key-points">
+              <div class="point">
+                <span class="point-check">✓</span>
+                <span>Semantic Elements</span>
+              </div>
+              <div class="point">
+                <span class="point-check">✓</span>
+                <span>Native Multimedia Support</span>
+              </div>
+              <div class="point">
+                <span class="point-check">✓</span>
+                <span>Accessibility First (WCAG)</span>
+              </div>
+              <div class="point">
+                <span class="point-check">✓</span>
+                <span>SEO Optimized Structure</span>
+              </div>
+              <div class="point">
+                <span class="point-check">✓</span>
+                <span>Cross-Platform Compatibility</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-stats">
+            <div class="stat-circle">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Browser Support</div>
+            </div>
+            <div class="stat-circle">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Semantic Elements</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Modules -->
+    <section class="learning-modules">
+      <div class="container">
+        <div class="section-header">
+          <h2>What You'll Learn</h2>
+        </div>
+        <div class="modules-grid">
+          <div class="module-card">
+            <h3>🏗️ Semantic HTML</h3>
+            <ul>
+              <li>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;</li>
+              <li>&lt;section&gt;, &lt;aside&gt;, &lt;footer&gt;</li>
+              <li>Proper document outline structure</li>
+              <li>Why semantics matter for screen readers</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>🎨 Forms & Input Types</h3>
+            <ul>
+              <li>New input types: email, tel, date, range</li>
+              <li>Form validation attributes</li>
+              <li>Datalist, output, progress elements</li>
+              <li>Building accessible forms</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>🖼️ Multimedia Integration</h3>
+            <ul>
+              <li>&lt;audio&gt; and &lt;video&gt; elements</li>
+              <li>Canvas for 2D graphics</li>
+              <li>SVG integration</li>
+              <li>Responsive images with srcset</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>📱 APIs & Advanced Features</h3>
+            <ul>
+              <li>Local Storage & Session Storage</li>
+              <li>Geolocation API</li>
+              <li>Drag and Drop API</li>
+              <li>Web Workers & Service Workers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Example -->
+    <section class="code-example">
+      <div class="container">
+        <h2>Semantic HTML Example</h2>
+        <div class="code-block">
+          <pre><code>&lt;!-- Semantic HTML5 Structure --&gt;
+&lt;header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h1&gt;Blog Post Title&lt;/h1&gt;
+    &lt;time datetime="2026-01-15"&gt;January 15, 2026&lt;/time&gt;
+    &lt;p&gt;Content goes here...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2026 DecodeLabs&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources-section">
+      <div class="container">
+        <h2>📚 Free Resources</h2>
+        <div class="resource-links">
+          <a href="#" class="resource-link">📘 HTML5 Cheatsheet PDF</a>
+          <a href="#" class="resource-link">🎥 Video: Semantic HTML in 10 Minutes</a>
+          <a href="#" class="resource-link">💎 Interactive Quiz: Test Your Knowledge</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="tech-cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Master HTML5?</h2>
+          <div class="cta-buttons">
+            <a href="enrollment.html" class="btn btn-primary">Enroll Now →</a>
+            <a href="curriculum.html" class="btn btn-secondary">View Full Curriculum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p> 
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="certification.html">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

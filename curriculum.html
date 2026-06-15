@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | Curriculum</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Curriculum</h1>
+        <p>Industry-aligned curriculum designed by experts</p>
+      </div>
+    </section>
+
+    <!-- Program Tabs -->
+    <section class="curriculum-tabs">
+      <div class="container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="fullstack">Full Stack</button>
+          <button class="tab-btn" data-tab="frontend">Frontend</button>
+          <button class="tab-btn" data-tab="backend">Backend</button>
+        </div>
+
+        <!-- Full Stack Curriculum -->
+        <div id="fullstack" class="tab-content active">
+          <div class="curriculum-overview">
+            <h2>Full Stack Development</h2>
+            <p>16 Weeks | 200+ Hours | 5 Projects</p>
+          </div>
+          
+          <div class="curriculum-modules">
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 1-2</span>
+                <h3>Frontend Fundamentals</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>HTML5 Semantic Elements & Accessibility</li>
+                  <li>CSS3: Flexbox, Grid, Animations</li>
+                  <li>Responsive Design & Mobile-First Approach</li>
+                  <li>CSS Preprocessors (SASS/SCSS)</li>
+                  <li><strong>Project:</strong> Portfolio Website</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 3-5</span>
+                <h3>JavaScript Mastery</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>ES6+ Features (Arrow functions, Destructuring, Spread)</li>
+                  <li>DOM Manipulation & Events</li>
+                  <li>Async JavaScript: Promises, Async/Await, Fetch API</li>
+                  <li>Error Handling & Debugging</li>
+                  <li><strong>Project:</strong> Interactive Dashboard</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 6-8</span>
+                <h3>React.js</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Components, Props, State, Hooks</li>
+                  <li>React Router for Navigation</li>
+                  <li>Context API & State Management</li>
+                  <li>API Integration in React</li>
+                  <li><strong>Project:</strong> E-commerce Frontend</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 9-11</span>
+                <h3>Backend Development (Node.js & Express)</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Node.js Runtime & NPM</li>
+                  <li>Express.js Framework & Routing</li>
+                  <li>RESTful API Design</li>
+                  <li>Authentication (JWT, OAuth)</li>
+                  <li><strong>Project:</strong> REST API for Task Manager</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 12-14</span>
+                <h3>Databases</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>MongoDB: Schema Design, CRUD, Aggregation</li>
+                  <li>Mongoose ODM</li>
+                  <li>PostgreSQL Basics</li>
+                  <li>Database Relationships</li>
+                  <li><strong>Project:</strong> Blog Platform with Database</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 15-16</span>
+                <h3>Deployment & Capstone</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Git & GitHub Workflow</li>
+                  <li>Deployment: Vercel, Render, AWS Basics</li>
+                  <li>Environment Variables & Security</li>
+                  <li>Performance Optimization</li>
+                  <li><strong>Capstone:</strong> Full Stack Application</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend Curriculum -->
+        <div id="frontend" class="tab-content">
+          <div class="curriculum-overview">
+            <h2>Frontend Mastery</h2>
+            <p>8 Weeks | 100+ Hours | 3 Projects</p>
+          </div>
+          
+          <div class="curriculum-modules">
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 1-2</span>
+                <h3>HTML5 & CSS3 Foundation</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Semantic HTML & SEO Best Practices</li>
+                  <li>CSS Selectors, Box Model, Positioning</li>
+                  <li>Flexbox & Grid Mastery</li>
+                  <li>Responsive Design & Media Queries</li>
+                  <li><strong>Project:</strong> Landing Page</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 3-5</span>
+                <h3>Advanced CSS & Frameworks</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>CSS Animations & Transitions</li>
+                  <li>Tailwind CSS Framework</li>
+                  <li>CSS Variables & Modern Features</li>
+                  <li>Cross-browser Compatibility</li>
+                  <li><strong>Project:</strong> Animated Portfolio</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 6-8</span>
+                <h3>JavaScript & React Basics</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>JavaScript ES6+ Essentials</li>
+                  <li>DOM Manipulation & Events</li>
+                  <li>Introduction to React</li>
+                  <li>Building Interactive Components</li>
+                  <li><strong>Capstone:</strong> Weather App</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Curriculum -->
+        <div id="backend" class="tab-content">
+          <div class="curriculum-overview">
+            <h2>Backend Engineering</h2>
+            <p>10 Weeks | 120+ Hours | 3 Projects</p>
+          </div>
+          
+          <div class="curriculum-modules">
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 1-2</span>
+                <h3>Node.js Fundamentals</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Node.js Architecture & Event Loop</li>
+                  <li>NPM & Module System</li>
+                  <li>File System & Streams</li>
+                  <li>HTTP Module & Creating Servers</li>
+                  <li><strong>Project:</strong> CLI Tool</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 3-5</span>
+                <h3>Express.js & API Development</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Express.js Routing & Middleware</li>
+                  <li>RESTful API Design Principles</li>
+                  <li>Request Validation & Error Handling</li>
+                  <li>API Documentation (Swagger)</li>
+                  <li><strong>Project:</strong> User Management API</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 6-8</span>
+                <h3>Databases & Authentication</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>MongoDB & Mongoose</li>
+                  <li>PostgreSQL & SQL Queries</li>
+                  <li>JWT Authentication & Authorization</li>
+                  <li>Password Hashing (bcrypt)</li>
+                  <li><strong>Project:</strong> Authentication System</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="module">
+              <div class="module-header">
+                <span class="module-week">Week 9-10</span>
+                <h3>Security & Deployment</h3>
+                <span class="module-toggle">▼</span>
+              </div>
+              <div class="module-content">
+                <ul>
+                  <li>Security Best Practices (Helmet, CORS, Rate Limiting)</li>
+                  <li>Environment Variables & Config</li>
+                  <li>Deployment on Render / Railway</li>
+                  <li>Monitoring & Logging</li>
+                  <li><strong>Capstone:</strong> Production-Ready API</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Curriculum -->
+    <section class="download-curriculum">
+      <div class="container">
+        <div class="download-card">
+          <span class="download-icon">📥</span>
+          <h3>Download Full Curriculum</h3>
+          <p>Get the detailed syllabus in PDF format</p>
+          <button class="btn btn-primary" id="downloadCurriculumBtn">Download PDF →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison">
+      <div class="container">
+        <div class="section-header">
+          <h2>Program Comparison</h2>
+        </div>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr><th>Feature</th><th>Frontend</th><th>Full Stack</th><th>Backend</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Duration</td><td>8 Weeks</td><td>16 Weeks</td><td>10 Weeks</td></tr>
+              <tr><td>Projects</td><td>3</td><td>5 + Capstone</td><td>3 + Capstone</td></tr>
+              <tr><td>HTML/CSS/JS</td><td>💎</td><td>💎</td><td>🚫</td></tr>
+              <tr><td>React.js</td><td>💎</td><td>💎</td><td>🚫</td></tr>
+              <tr><td>Node.js/Express</td><td>🚫</td><td>💎</td><td>💎</td></tr>
+              <tr><td>Databases</td><td>🚫</td><td>💎</td><td>💎</td></tr>
+              <tr><td>Placement Support</td><td>Basic</td><td>Premium</td><td>Standard</td></tr>
+              <tr><td>Price</td><td>₹14,999</td><td>₹24,999</td><td>₹19,999</td></tr> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="curriculum-cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Enroll?</h2>
+          <p>Start your journey with DecodeLabs today</p>
+          <div class="cta-buttons">
+            <a href="enrollment.html" class="btn btn-primary">Enroll Now →</a>
+            <a href="contact.html" class="btn btn-secondary">Talk to Advisor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="certification.html">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

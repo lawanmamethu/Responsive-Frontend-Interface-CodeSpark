@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | Full Stack Industrial Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Emoji Rain Canvas -->
+  <canvas id="emojiRain"></canvas>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>End-to-End<br>Labs</h1>
+        <p class="hero-subtitle">Full Stack Industrial Training</p>
+        <div class="hero-meta">
+          <span class="divider">•</span>
+        </div>
+        <p>Master responsive frontend development with HTML5, CSS3, and JavaScript.<br>Build real-world portfolio projects that employers love.</p>
+        <div class="hero-buttons">
+          <a href="enrollment.html" class="btn btn-primary">Start Training →</a>
+          <a href="curriculum.html" class="btn btn-secondary">View Curriculum</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolkit Section -->
+    <section class="toolkit">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Stack</span>
+          <h2>The Toolkit</h2>
+          <p>Industry-standard technologies you'll master during this training</p>
+        </div>
+        <div class="toolkit-grid">
+          <div class="tool-card">
+            <div class="tool-icon">📄</div>
+            <h3>HTML5</h3>
+            <p>Semantic landmarks and structural meaning. The right element for the right job. Built for AI and accessibility.</p>
+            <a href="html5-details.html" class="learn-more">Learn more →</a>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Responsive styling using Grid, Flexbox, and Container Queries. Mobile-first design with modern aesthetics.</p>
+            <a href="css3-details.html" class="learn-more">Learn more →</a>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Basic state management and interactive functionality. ES6+ features and DOM manipulation.</p>
+            <a href="javascript-details.html" class="learn-more">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+      <div class="container">
+        <div class="quote-block">
+          <span class="quote-mark">"</span>
+          <blockquote>
+            AI is like fire. It can cook your food or it can burn your house down.  
+          </blockquote>
+          <p class="quote-author"><b>- Sam Altman</b><br>CEO of OpenAI</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Your Journey</span>
+          <h2>What You'll Build</h2>
+          <p>Each project adds a real-world asset to your portfolio</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-number">01</div>
+            <h3>Responsive Interface</h3>
+            <p>Mobile-first layout with dark mode and semantic HTML5</p>
+          </div>
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <h3>Interactive Dashboard</h3>
+            <p>Dynamic data visualization with JavaScript</p>
+          </div>
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <h3>Backend Integration</h3>
+            <p>Full-stack application with database connectivity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="certification.html">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <!-- Emoji Rain Script -->
+  <script>
+    (function() {
+      const canvas = document.getElementById('emojiRain');
+      if (!canvas) return;
+      
+      let ctx = canvas.getContext('2d');
+      let emojis = [];
+      let animationId = null;
+      
+      // Emojis that will rain down
+      const emojiList = ['💻', '🚀', '⚡', '🎨', '📄', '💡', '🎯', '🔥', '💪', '🌟', '✨', '💎', '📱', '🖥️', '🔧', '⚙️', '📚', '🎓', '🏆', '⭐', '🌀', '💫', '⭐', '💻', '🚀'];
+      
+      class Emoji {
+        constructor(x, y, size, speed, emoji) {
+          this.x = x;
+          this.y = y;
+          this.size = size;
+          this.speed = speed;
+          this.emoji = emoji;
+          this.opacity = Math.random() * 0.5 + 0.3;
+        }
+        
+        draw() {
+          if (!ctx) return;
+          ctx.save();
+          ctx.globalAlpha = this.opacity;
+          ctx.font = `${this.size}px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif`;
+          ctx.fillText(this.emoji, this.x, this.y);
+          ctx.restore();
+        }
+        
+        update() {
+          this.y += this.speed;
+          if (this.y > canvas.height + 50) {
+            this.y = -50;
+            this.x = Math.random() * canvas.width;
+          }
+        }
+      }
+      
+      function initEmojis() {
+        emojis = [];
+        const count = Math.min(60, Math.floor(window.innerWidth / 20));
+        
+        for (let i = 0; i < count; i++) {
+          const size = Math.random() * 20 + 16;
+          const speed = Math.random() * 1.5 + 0.8;
+          const x = Math.random() * canvas.width;
+          const y = Math.random() * canvas.height;
+          const emoji = emojiList[Math.floor(Math.random() * emojiList.length)];
+          emojis.push(new Emoji(x, y, size, speed, emoji));
+        }
+      }
+      
+      function resizeCanvas() {
+        if (!canvas) return;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initEmojis();
+      }
+      
+      function animate() {
+        if (!canvas || !ctx) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        for (let emoji of emojis) {
+          emoji.update();
+          emoji.draw();
+        }
+        
+        animationId = requestAnimationFrame(animate);
+      }
+      
+      function startRain() {
+        if (!canvas) return;
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.pointerEvents = 'none';
+        canvas.style.zIndex = '9999';
+        
+        ctx = canvas.getContext('2d');
+        resizeCanvas();
+        animate();
+      }
+      
+      window.addEventListener('resize', () => {
+        if (canvas) {
+          resizeCanvas();
+        }
+      });
+      
+      startRain();
+    })();
+  </script>
+</body>
+</html>

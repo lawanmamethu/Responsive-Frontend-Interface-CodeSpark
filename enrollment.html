@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | Enrollment</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Enrollment</h1>
+        <p>Start your journey with CodeSpark today</p>
+      </div>
+    </section>
+
+    <!-- Enrollment Steps -->
+    <section class="enrollment-steps">
+      <div class="container">
+        <div class="section-header">
+          <h2>Simple 4-Step Enrollment Process</h2>
+          <p>Get started in less than 10 minutes</p>
+        </div>
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon">📝</div>
+            <h3>Fill Application</h3>
+            <p>Complete the online enrollment form with your details</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon">💳</div>
+            <h3>Make Payment</h3>
+            <p>Secure payment via UPI, Card, or Net Banking</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-icon">✅</div>
+            <h3>Get Confirmation</h3>
+            <p>Receive enrollment confirmation within 24 hours</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <div class="step-icon">🚀</div>
+            <h3>Start Learning</h3>
+            <p>Access LMS, join community, and begin your journey</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="enrollment-form-section">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-header">
+            <h2>Student Enrollment Form</h2>
+            <p>Fill in the details below to secure your seat</p>
+          </div>
+          
+          <form id="enrollmentForm">
+            <!-- Personal Information -->
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="enrollName" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="enrollEmail" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="enrollPhone" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Date of Birth *</label>
+                <input type="date" id="enrollDob" required>
+              </div>
+              <div class="form-group">
+                <label>Gender *</label>
+                <select id="enrollGender" required>
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="prefer-not">Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Program Selection -->
+            <div class="form-group">
+              <label>Select Program *</label>
+              <select id="enrollProgram" required>
+                <option value="">Choose a program</option>
+                <option value="fullstack">Full Stack Development (16 Weeks) - ₹24,999</option>
+                <option value="frontend">Frontend Mastery (8 Weeks) - ₹14,999</option>
+                <option value="backend">Backend Engineering (10 Weeks) - ₹19,999</option>
+              </select>
+            </div>
+            
+            <!-- Education Details -->
+            <div class="form-group">
+              <label>Highest Qualification *</label>
+              <select id="enrollQualification" required>
+                <option value="">Select</option>
+                <option value="btech">B.Tech / B.E</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="msc">M.Sc (CS/IT)</option>
+                <option value="diploma">Diploma</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Passing Year *</label>
+                <input type="number" id="enrollYear" placeholder="YYYY" min="2020" max="2026" required>
+              </div>
+              <div class="form-group">
+                <label>Percentage / CGPA *</label>
+                <input type="text" id="enrollPercentage" placeholder="e.g., 8.5 CGPA or 75%" required>
+              </div>
+            </div>
+            
+            <!-- Address -->
+            <div class="form-group">
+              <label>Address *</label>
+              <textarea id="enrollAddress" rows="2" placeholder="Full address" required></textarea>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>City *</label>
+                <input type="text" id="enrollCity" required>
+              </div>
+              <div class="form-group">
+                <label>State *</label>
+                <input type="text" id="enrollState" required>
+              </div>
+              <div class="form-group">
+                <label>Pincode *</label>
+                <input type="text" id="enrollPincode" required>
+              </div>
+            </div>
+            
+            <!-- How did you hear -->
+            <div class="form-group">
+              <label>How did you hear about DecodeLabs? *</label>
+              <select id="enrollSource" required>
+                <option value="">Select</option>
+                <option value="google">Google Search</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="youtube">YouTube</option>
+                <option value="friend">Friend/Family</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <!-- Payment Options -->
+            <div class="payment-options">
+              <label>Payment Method *</label>
+              <div class="payment-methods">
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="online" checked>
+                  <span>💳 Online Payment (UPI/Card/NetBanking)</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="offline">
+                  <span>🏦 Bank Transfer / Demand Draft</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="emi">
+                  <span>📅 EMI (No Cost EMI available)</span>
+                </label>
+              </div>
+            </div>
+            
+            <!-- Terms -->
+            <label class="checkbox-label">
+              <input type="checkbox" id="enrollTerms" required>
+              I agree to the <a href="terms-of-use.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a> *
+            </label>
+            
+            <button type="submit" class="btn btn-primary submit-enroll">Proceed to Payment →</button>
+            <p id="enrollStatus" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Info -->
+    <section class="payment-info">
+      <div class="container">
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-icon">🔒</span>
+            <h3>Secure Payments</h3>
+            <p>100% secure payment gateway with SSL encryption</p>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🔄</span>
+            <h3>7-Day Refund</h3>
+            <p>Full refund if canceled within 7 days of enrollment</p>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🎓</span>
+            <h3>Scholarships</h3>
+            <p>Merit-based scholarships up to 50% available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p> 
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="certification.html">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

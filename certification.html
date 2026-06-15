@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | Certification Programs</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Get Certified</h1>
+        <p>Industry-recognized certifications to validate your skills</p>
+      </div>
+    </section>
+
+    <!-- Certification Intro -->
+    <section class="cert-intro">
+      <div class="container">
+        <div class="intro-card">
+          <div class="intro-icon">🏅</div>
+          <h2>Why Get Certified with CodeSpark?</h2>
+          <p>Our certifications are designed in collaboration with industry experts and recognized by top tech companies. Each certificate proves your hands-on skills, not just theoretical knowledge.</p>
+          <div class="intro-badges">
+            <span class="badge">✓ Industry Recognized</span>
+            <span class="badge">✓ Lifetime Validity</span>
+            <span class="badge">✓ Verified Badge</span>
+            <span class="badge">✓ Share on LinkedIn</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Tracks -->
+    <section class="cert-tracks">
+      <div class="container">
+        <div class="section-header">
+          <h2>Certification Tracks</h2>
+          <p>Choose the path that matches your career goals</p>
+        </div>
+        <div class="tracks-grid">
+          <div class="track-card">
+            <div class="track-level beginner">Beginner</div>
+            <h3>Frontend Developer</h3>
+            <div class="track-price">Free</div>
+            <ul class="track-modules">
+              <li>✓ HTML5 & CSS3 Mastery</li>
+              <li>✓ JavaScript Essentials</li>
+              <li>✓ Responsive Design</li>
+              <li>✓ 2 Live Projects</li>
+            </ul>
+            <div class="track-duration">⏱ 6 Weeks | Self-paced</div>
+            <button class="btn btn-primary enroll-cert" data-cert="Frontend Developer">Enroll Free →</button>
+          </div>
+
+          <div class="track-card featured">
+            <div class="track-badge">Most Popular</div>
+            <div class="track-level intermediate">Intermediate</div>
+            <h3>Full Stack Developer</h3>
+            <div class="track-price">₹4,999</div>
+            <ul class="track-modules">
+              <li>✓ MERN Stack Complete</li>
+              <li>✓ RESTful APIs & Authentication</li>
+              <li>✓ Database Design (MongoDB/PostgreSQL)</li>
+              <li>✓ 5 Live Projects + Capstone</li>
+              <li>✓ 1-on-1 Mock Interviews</li>
+            </ul>
+            <div class="track-duration">⏱ 16 Weeks | Instructor-led</div>
+            <button class="btn btn-primary enroll-cert" data-cert="Full Stack Developer">Enroll Now →</button>
+          </div>
+
+          <div class="track-card">
+            <div class="track-level advanced">Advanced</div>
+            <h3>Backend Specialist</h3>
+            <div class="track-price">₹3,499</div>
+            <ul class="track-modules">
+              <li>✓ Node.js & Express Deep Dive</li>
+              <li>✓ System Design Basics</li>
+              <li>✓ Microservices Architecture</li>
+              <li>✓ 3 Live Projects</li>
+              <li>✓ Performance Optimization</li>
+            </ul>
+            <div class="track-duration">⏱ 10 Weeks | Instructor-led</div>
+            <button class="btn btn-primary enroll-cert" data-cert="Backend Specialist">Enroll Now →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="included-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What's Included in Every Certification?</h2>
+        </div>
+        <div class="included-grid">
+          <div class="included-item">
+            <span class="included-icon">📚</span>
+            <h3>Study Materials</h3>
+            <p>Video lectures, notes, and code repositories</p>
+          </div>
+          <div class="included-item">
+            <span class="included-icon">💻</span>
+            <h3>Hands-on Projects</h3>
+            <p>Real-world assignments with feedback</p>
+          </div>
+          <div class="included-item">
+            <span class="included-icon">🎓</span>
+            <h3>Final Exam</h3>
+            <p>Proctored online assessment</p>
+          </div>
+          <div class="included-item">
+            <span class="included-icon">📜</span>
+            <h3>Digital Certificate</h3>
+            <p>Printable & shareable PDF + LinkedIn badge</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Certificate Preview -->
+    <section class="cert-preview">
+      <div class="container">
+        <div class="preview-card">
+          <h2>Sample Certificate</h2>
+          <p>Here's what your digital certificate will look like</p>
+          <div class="certificate-sample">
+            <div class="cert-border">
+              <div class="cert-inner">
+                <div class="cert-logo">📜 CodeSpark</div>
+                <h3>CERTIFICATE OF COMPLETION</h3>
+                <p>This certificate is proudly presented to</p>
+                <div class="cert-name">[Your Name]</div>
+                <p>for successfully completing</p>
+                <div class="cert-course">Full Stack Development Certification</div>
+                <div class="cert-date">Date: [Completion Date] | Certificate ID: DEC-2026-XXXX</div>
+                <div class="cert-signature">
+                  <div>_________________</div>
+                  <div>Rahul Mehta<br>Lead Instructor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="preview-note">✨ Verified & shareable on LinkedIn, GitHub, and portfolio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>How to Get Certified</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Enroll in a Track</h3>
+            <p>Choose your certification track and complete payment (if applicable)</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Complete Coursework</h3>
+            <p>Finish all modules, assignments, and projects</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Pass the Exam</h3>
+            <p>Clear the final assessment with 70% or higher</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Get Certified</h3>
+            <p>Receive your digital certificate within 7 days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="cert-faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">❓ How long is the certificate valid?</div>
+            <div class="faq-answer">Lifetime validity. Your certification never expires.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">❓ Can I retake the exam if I fail?</div>
+            <div class="faq-answer">Yes, you get 2 free retakes. Additional attempts cost ₹500.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">❓ Is financial aid available?</div>
+            <div class="faq-answer">Yes, merit-based scholarships are available for eligible students.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">❓ How do I share my certificate?</div>
+            <div class="faq-answer">Download PDF or share the verified link on LinkedIn, GitHub, or portfolio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cert-cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Validate Your Skills?</h2>
+          <p>Join thousands of certified developers who started their journey with DecodeLabs</p>
+          <div class="cta-buttons">
+            <a href="programs.html" class="btn btn-primary">View All Programs →</a>
+            <a href="contact.html" class="btn btn-secondary">Talk to Advisor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Modal -->
+    <div id="certModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Enroll in <span id="modalCertTitle"></span></h2>
+        <form id="certEnrollForm">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="emailId">Email Address *</label>
+            <input type="email" id="emailId" required>
+          </div>
+          <div class="form-group">
+            <label for="phoneNum">Phone Number *</label>
+            <input type="tel" id="phoneNum" required>
+          </div>
+          <div class="form-group">
+            <label for="experience">Current Experience Level *</label>
+            <select id="experience" required>
+              <option value="">Select</option>
+              <option value="beginner">Beginner (0-6 months)</option>
+              <option value="intermediate">Intermediate (6 months - 2 years)</option>
+              <option value="advanced">Advanced (2+ years)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="hearAbout">How did you hear about us?</label>
+            <input type="text" id="hearAbout" placeholder="Google, LinkedIn, Friend, etc.">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Enrollment →</button>
+          <p id="certStatus" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="programs.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="certification.html">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

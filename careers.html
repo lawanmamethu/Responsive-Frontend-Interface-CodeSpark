@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpark | Careers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-bold">Code</span>Spark
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-mode-btn" id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Join Our Team</h1>
+        <p>Help us shape the future of tech education</p>
+      </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="why-join">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Work at DecodeLabs?</h2>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <span class="benefit-icon">💸</span>
+            <h3>Competitive Salary</h3>
+            <p>Industry-standard compensation with performance bonuses</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🏠</span>
+            <h3>Remote-Friendly</h3>
+            <p>Work from anywhere with flexible hours</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">📚</span>
+            <h3>Learning Budget</h3>
+            <p>₹50,000 annual budget for courses and conferences</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🩺</span>
+            <h3>Health Insurance</h3>
+            <p>Comprehensive coverage for you and your family</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🚀</span>
+            <h3>Growth Opportunities</h3>
+            <p>Fast promotions and leadership paths</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🎉</span>
+            <h3>Team Events</h3>
+            <p>Regular hackathons, retreats, and celebrations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="openings">
+      <div class="container">
+        <div class="section-header">
+          <h2>Open Positions</h2>
+          <p>Join a team that's passionate about education and technology</p>
+        </div>
+        <div class="job-listings">
+          <div class="job-card">
+            <div class="job-header">
+              <h3>Full Stack Instructor</h3>
+              <span class="job-type full-time">Full Time</span>
+            </div>
+            <p class="job-location">📍 Lucknow / Remote</p>
+            <p class="job-desc">Teach MERN stack, guide student projects, and mentor aspiring developers. 3+ years industry experience required.</p>
+            <div class="job-footer">
+              <span class="job-salary">💰 ₹8L - ₹15L / year</span>
+              <button class="btn-small apply-btn" data-job="Full Stack Instructor">Apply →</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <h3>Frontend Developer (Curriculum)</h3>
+              <span class="job-type full-time">Full Time</span>
+            </div>
+            <p class="job-location">📍 Remote (India only)</p>
+            <p class="job-desc">Create frontend course materials, assignments, and projects. Expertise in React, Tailwind, and responsive design.</p>
+            <div class="job-footer">
+              <span class="job-salary">💰 ₹6L - ₹12L / year</span>
+              <button class="btn-small apply-btn" data-job="Frontend Developer (Curriculum)">Apply →</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <h3>Career Success Manager</h3>
+              <span class="job-type full-time">Full Time</span>
+            </div>
+            <p class="job-location">📍 Lucknow</p>
+            <p class="job-desc">Help students with resume building, interview prep, and job placements. HR/recruitment experience preferred.</p>
+            <div class="job-footer">
+              <span class="job-salary">💰 ₹5L - ₹9L / year</span>
+              <button class="btn-small apply-btn" data-job="Career Success Manager">Apply →</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <h3>Teaching Assistant (Intern)</h3>
+              <span class="job-type internship">Internship</span>
+            </div>
+            <p class="job-location">📍 Remote</p>
+            <p class="job-desc">Support students, grade assignments, and host doubt-solving sessions. Perfect for recent graduates.</p>
+            <div class="job-footer">
+              <span class="job-salary">💰 ₹25,000 - ₹35,000 / month</span>
+              <button class="btn-small apply-btn" data-job="Teaching Assistant (Intern)">Apply →</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <h3>Marketing & Community Lead</h3>
+              <span class="job-type part-time">Part Time</span>
+            </div>
+            <p class="job-location">📍 Remote</p>
+            <p class="job-desc">Grow our online community, manage social media, and plan events. Content creation experience required.</p>
+            <div class="job-footer">
+              <span class="job-salary">💰 ₹4L - ₹7L / year</span>
+              <button class="btn-small apply-btn" data-job="Marketing & Community Lead">Apply →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Modal (hidden by default) -->
+    <div id="applyModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Apply for <span id="modalJobTitle"></span></h2>
+        <form id="applicationForm">
+          <div class="form-group">
+            <label for="applicantName">Full Name *</label>
+            <input type="text" id="applicantName" required>
+          </div>
+          <div class="form-group">
+            <label for="applicantEmail">Email Address *</label>
+            <input type="email" id="applicantEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="applicantPhone">Phone Number *</label>
+            <input type="tel" id="applicantPhone" required>
+          </div>
+          <div class="form-group">
+            <label for="applicantResume">Resume/CV Link (Google Drive/LinkedIn) *</label>
+            <input type="url" id="applicantResume" placeholder="https://..." required>
+          </div>
+          <div class="form-group">
+            <label for="applicantMessage">Why are you a good fit?</label>
+            <textarea id="applicantMessage" rows="4" placeholder="Tell us about your experience and passion..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Application →</button>
+          <p id="appStatus" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bold">Code</span>Spark
+        <p>CodeSpark helps learners master web development skills.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Program</h4>
+          <a href="programs.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+          <a href="#">Certification</a>
+        </div>
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>📧 codespark.tech@gmail.com | 📞 +91 89330 09000 | 📍 Hyderabad, India</p>
+      <p>© 2026 CodeSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
